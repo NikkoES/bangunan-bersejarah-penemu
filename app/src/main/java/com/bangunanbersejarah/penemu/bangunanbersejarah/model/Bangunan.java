@@ -20,15 +20,10 @@ public class Bangunan {
     String idProvinsi;
     @SerializedName("id_daerah")
     String idDaerah;
-
-    public Bangunan(String idBangunan, String namaBangunan, String sejarahBangunan, String imageBangunan, String idProvinsi, String idDaerah) {
-        this.idBangunan = idBangunan;
-        this.namaBangunan = namaBangunan;
-        this.sejarahBangunan = sejarahBangunan;
-        this.imageBangunan = imageBangunan;
-        this.idProvinsi = idProvinsi;
-        this.idDaerah = idDaerah;
-    }
+    @SerializedName("tanggal_pengajuan")
+    String tanggal;
+    @SerializedName("alamat_bangunan")
+    String alamatBangunan;
 
     public String getIdBangunan() {
         return idBangunan;
@@ -52,5 +47,13 @@ public class Bangunan {
 
     public String getIdDaerah() {
         return idDaerah;
+    }
+
+    public String getTanggal() {
+        return tanggal;
+    }
+
+    public String getAlamatBangunan() {
+        return alamatBangunan;
     }
 }

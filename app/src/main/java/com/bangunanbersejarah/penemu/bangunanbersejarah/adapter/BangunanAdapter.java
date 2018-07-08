@@ -60,6 +60,8 @@ public class BangunanAdapter extends RecyclerView.Adapter<BangunanAdapter.ViewHo
                 i.putExtra("image_bangunan", bangunan.getImageBangunan());
                 i.putExtra("id_provinsi", bangunan.getIdProvinsi());
                 i.putExtra("id_daerah", bangunan.getIdDaerah());
+                i.putExtra("tanggal", bangunan.getTanggal());
+                i.putExtra("alamat_bangunan", bangunan.getAlamatBangunan());
                 context.startActivity(i);
                 ((Activity) context).overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
             }
